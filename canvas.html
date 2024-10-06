@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Shapes</title>
+    <style>
+        canvas {
+            margin: 10px 0;
+        }
+        #myCanvas{
+            padding-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <canvas id="myCanvas" width="400" height="350"></canvas>
+
+    <script>
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+
+        ctx.fillStyle = "green";
+        // Add a rectangle at (10, 10) with size 100x100 pixels
+        ctx.fillRect(200, 10, 100, 100);
+
+        
+        // Draw a rectangle
+        ctx.fillStyle = 'blue';
+        ctx.fillRect(50, 50, 100, 50);
+
+        // Draw a circle
+        ctx.beginPath();
+        ctx.arc(200, 200, 40, 0, Math.PI * 2, false);
+        ctx.fillStyle = 'red';
+        ctx.fill();
+
+
+
+        
+    </script>
+
+</body>
+
+</html>
